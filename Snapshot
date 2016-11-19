@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>My School Snapshot</title>
+	</head>
+
+	<body>
+		<p>
+		<center><h1>My School Snapshot</h1></center>
+		<center>  <select name="schools">
+			<option value="choose">Choose Your School</option>
+  			<option value="Novi">Novi High School</option>
+		  	<option value="Pioneer">Pioneer High School</option>
+		  	<option value="Huron">Huron High School</option> </select></center>
+		<center> Username: <input type="textarea" name="Username"> </center>
+		<center> Password:  <input type="textarea" name="Password"> </center>
+		<center><button type="submit" formaction="">Submit</button></center>
+		<!-- fixme: program button (make stuff above invisible or load new page) -->
+		<!-- formaction="URL" (can we make this go to the Novi website?) -->
+
+		<!-- START TILE 1: DAILY SCHEDULE -->
+
+
+
+
+
+
+		<!-- END TILE 1 -->
+		<!-- START TILE 2: TO DO LIST  -->
+
+
+
+
+
+
+		<!-- END TILE 2 -->
+		<!-- START TILE 3: CURRENT GRADES -->
+
+
+
+
+
+
+		<!-- END TILE 3 -->
+		<!-- START TILE 4: LINKS TO COURSE NOTES/SLIDES -->
+
+
+
+
+
+
+		<!-- END TILE 4 -->
+		<!-- START TILE 5: THIS WEEK'S LUNCH OPTIONS -->
+
+
+
+
+
+
+
+		<!-- END TILE 5 -->
+		<!-- START TILE 6: UPCOMING EVENTS (FOOTBALL GAMES, ETC.) -->
+
+
+
+
+
+
+
+		<!-- END TILE 6 -->
+
+		<!-- !--<img src="blah.jpg"> -->
+		</p>
+	</body>
+</html>
