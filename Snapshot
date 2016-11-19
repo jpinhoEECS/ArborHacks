@@ -18,7 +18,9 @@
 		<!-- formaction="URL" (can we make this go to the Novi website?) -->
 
 		<!-- START TILE 1: DAILY SCHEDULE -->
-
+		<br>
+		<br>
+		<center><h2>Daily Schedule</h2></center>
 
 
 
@@ -26,15 +28,21 @@
 
 		<!-- END TILE 1 -->
 		<!-- START TILE 2: TO DO LIST  -->
-
-
-
-
+		<br>
+		<br>
+		<center><h2>To Do List</h2></center>
+		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
+		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
+		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
+		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
+		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
 
 
 		<!-- END TILE 2 -->
 		<!-- START TILE 3: CURRENT GRADES -->
-
+		<br>
+		<br>
+		<center><h2>Current Grades</h2></center>
 
 
 
