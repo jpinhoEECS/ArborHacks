@@ -42,12 +42,14 @@
 		  	<div class="col-md-4">
 		  		<div class="col-md-12 bordered" id="to-do-list">
 		  		<h2>To Do List</h2>
+		  		<!-- 
 		  			<input type="checkbox"><input type="textarea" name="todo1"><br>
 					<input type="checkbox"><input type="textarea" name="todo2"><br>
 					<input type="checkbox"><input type="textarea" name="todo3"><br>
 					<input type="checkbox"><input type="textarea" name="todo4"><br>
 					<input type="checkbox"><input type="textarea" name="todo5"><br>
 					<strike>not yet available!</strike>
+					-->
 					<!-- FIXME: add if statements to strike through text of completed tasks -->
 		  		</div>
 		  	</div>
@@ -145,7 +147,7 @@
 	 	   		Student4 : {
 
 	 	   		}
-	 	   		
+
 	 	   	};
 
 
@@ -190,6 +192,7 @@
 	 	   			li.innerHTML = course;
 	 	   			ul.appendChild(li);
 	 	   		}
+	 	   		// FIXME: would like to add checkboxes to list
 
 	 	   		// add entire schedule to the 'to-do-list' tile
 	 	   		document.getElementById('to-do-list').appendChild(ul);
