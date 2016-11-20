@@ -109,8 +109,8 @@
 
 	 	   		jason : {
 
-	 	   			schedule : ["eat", 
-	 	   						"drink", 
+	 	   			schedule : ["9:00am - 9:55am: English", 
+	 	   						"10:01am - 10:56: Statistics", 
 	 	   						"poo"],
 
 	 	   			grades : {
@@ -134,18 +134,100 @@
 	 	   		},
 
 	 	   		// student 2
-	 	   		Cindy : {
+	 	   		Student2 : {
+
+	 	   			schedule : ["9:00am - 9:55am: English", 
+	 	   						"10:01am - 10:56: Statistics", 
+	 	   						"3rd thing",
+	 	   						"4th",
+	 	   						"5th",
+	 	   						"6th"],
+
+	 	   			grades : ["English: A",
+				 	   		  "class2: A",
+				 	   		  "class3: A",
+				 	   		  "class4: A",
+				 	   		  "class5: A",
+				 	   		  "class6: A"],
+
+	 	   			todolist : ["first thing", 
+	 	   						"second thing",
+	 	   						"third thing",
+	 	   						"fourth thing",
+	 	   						"fifth thing",
+	 	   						"sixth"],
+
+	 	   			notes : ["CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1"]
 
 	 	   		},
 
 	 	   		// student 3
 	 	   		Student3 : {
 
+	 	   			schedule : ["9:00am - 9:55am: English", 
+	 	   						"10:01am - 10:56: Statistics", 
+	 	   						"3rd thing",
+	 	   						"4th",
+	 	   						"5th",
+	 	   						"6th"],
+
+	 	   			grades : ["English: A",
+				 	   		  "class2: A",
+				 	   		  "class3: A",
+				 	   		  "class4: A",
+				 	   		  "class5: A",
+				 	   		  "class6: A"],
+
+	 	   			todolist : ["first thing", 
+	 	   						"second thing",
+	 	   						"third thing",
+	 	   						"fourth thing",
+	 	   						"fifth thing",
+	 	   						"sixth"],
+
+	 	   			notes : ["CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1"]
 	 	   		},
 
 	 	   		// student 4	
 	 	   		Student4 : {
 
+	 	   			schedule : ["9:00am - 9:55am: English", 
+	 	   						"10:01am - 10:56: Statistics", 
+	 	   						"3rd thing",
+	 	   						"4th",
+	 	   						"5th",
+	 	   						"6th"],
+
+	 	   			grades : ["English: A",
+				 	   		  "class2: A",
+				 	   		  "class3: A",
+				 	   		  "class4: A",
+				 	   		  "class5: A",
+				 	   		  "class6: A"],
+
+	 	   			todolist : ["first thing", 
+	 	   						"second thing",
+	 	   						"third thing",
+	 	   						"fourth thing",
+	 	   						"fifth thing",
+	 	   						"sixth"],
+
+	 	   			notes : ["CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1"]
 	 	   		}
 
 	 	   	};
