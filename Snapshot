@@ -85,7 +85,20 @@
 		  	<div class="col-md-4">
 		  	<!-- TILE 6: UPCOMING EVENTS -->
 		  		<div class="col-md-12 bordered" id="upcoming-events">
-		  			<h2>Upcoming Events</h2>
+		  			<center><h2>Upcoming Events</h2></center>
+				<p id = "first"</p>
+				<script>
+					
+					document.getElementById("first").innerHTML = "Thanksgiving Break!"
+
+				</script>
+				<center><p id = "second"</p></center>
+				<script>
+					
+					document.getElementById("second").innerHTML = "Novi Open House on November 29th"
+				</script>
+
+
 
 
 
