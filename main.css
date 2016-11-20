@@ -2,6 +2,29 @@
 	border: 2px solid black;
 }
 
-.opaque {
-	background-color: blue;
+.opaque-green {
+	background-color: #60BF92;
+	opacity: 50;
+}
+
+.opaque-white {
+	background-color: white;
+	opacity: 50
+}
+
+.no-border {
+	border: 0 !important;
+	background-color: white !important;
+}
+
+.invisible {
+	display: none;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+input[type=checkbox]:checked ~ span.strikethrough{
+    text-decoration: line-through;
 }

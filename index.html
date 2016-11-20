@@ -9,7 +9,7 @@
 			  crossorigin="anonymous"></script>
 	</head>
 
-	<body background="Novi_watermark.jpg" id="body">
+	<body background="real_watermark.jpg" id="body">
 		<p>
 		<center><h1>My School Snapshot</h1></center>
 		<center><h2 id="below_main_title"></h2></center>
@@ -20,8 +20,8 @@
 		  	<option value="Huron">Huron High School</option> </select></center>
 		<!-- These are the text box fields for name, username, and password -->
 		<center> Your Name: <input type="textarea" name="first_name" id="first_name" class="user_first_name"> </center>
-		<center> Username : <input type="textarea" name="username" id="username"> </center>
-		<center> Password: <input type="password" name="password" id="password"> </center>
+		<center id="username"> Username : <input type="textarea" name="username"> </center>
+		<center id="password"> Password : <input type="password" name="password"> </center>
 		
 		<center><button onclick="loadAllTiles();">Login</button></center>
 		<br>
@@ -34,9 +34,8 @@
 		  	<!-- TILE 1: DAILY SCHEDULE -->
 		  		<div class="col-md-12 bordered opaque-green" id="daily-schedule">
 		  			<h2>Daily Schedule</h2>
-
-
-
+		  			<!-- NO CODE GOES HERE: everything gets filled in from functions
+		  									below after they click "Login" -->
 		  		</div>
 		  	</div>
 
@@ -44,6 +43,9 @@
 		  	<div class="col-md-4">
 		  		<div class="col-md-12 bordered opaque-white" id="to-do-list">
 		  		<h2>To Do List</h2>
+
+		  		<!-- NO CODE GOES HERE: everything gets filled in from functions
+		  								below after they click "Login" -->
 		  		<!-- 
 		  			<input type="checkbox"><input type="textarea" name="todo1"><br>
 					<input type="checkbox"><input type="textarea" name="todo2"><br>
@@ -60,9 +62,8 @@
 		  	<!-- TILE 3: CURRENT GRADES -->
 		  		<div class="col-md-12 bordered opaque-green" id="current-grades">
 		  			<h2>Current Grades</h2> 
-
-
-
+		  			<!-- NO CODE GOES HERE: everything gets filled in from functions
+		  									below after they click "Login" -->
 		  		</div>
 		  	</div>
 		</div></center>
@@ -103,24 +104,13 @@
 
 		  		<img src="new.jpg" width="350px" height="270px">
 
-
-
 		  		<br>
 		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_21-25_wk4.pdf">Lunch Menu Week of Nov.21-25</a>
-		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_28-dec_2_wk1.pdf">Lunch Menu Week of Nov.28-Dec. 2</a>
-		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_5-9_wk2.pdf">Lunch Menu Week of Dec.5-9</a>
-		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_12-16_wk3.pdf">Lunch Menu Week of Dec.12-16</a>
-		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_19-23_wk4.pdf">Lunch Menu Week of Dec.19-23</a>
-
-
-
-		  	
-
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_21-25_wk4.pdf">Lunch Menu Week of Nov. 21 - 25</a><br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_28-dec_2_wk1.pdf">Lunch Menu Week of Nov. 28 - Dec. 2</a><br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_5-9_wk2.pdf">Lunch Menu Week of Dec. 5 - 9</a><br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_12-16_wk3.pdf">Lunch Menu Week of Dec. 12 - 16</a><br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_19-23_wk4.pdf">Lunch Menu Week of Dec. 19 - 23</a>
 
 		  		</div>
 		  	</div>
@@ -128,74 +118,19 @@
 		  	<div class="col-md-4">
 		  	<!-- TILE 6: UPCOMING EVENTS -->
 		  		<div class="col-md-12 bordered opaque-white" id="upcoming-events">
-
-		  		
+		  			<h2>Upcoming Events</h2>
 		  			
-
-		  			<center><h2>Upcoming Events</h2></center>
-				<p id = "first"</p>
+				<center><p id = "first"></p></center>
 				<script>
 					
-					document.getElementById("first").innerHTML = "Nov.24-25: Thanksgiving Break!"
+					document.getElementById("first").innerHTML = "Thanksgiving Break!"
 
 				</script>
-				<center><p id = "second"</p></center>
+				<center><p id = "second"></p></center>
 				<script>
 					
-					document.getElementById("second").innerHTML = "Nov. 29: Novi Open House"
+					document.getElementById("second").innerHTML = "Novi Open House on November 29th"
 				</script>
-
-				<center><p id = "third"</p></center>
-				<script>
-					
-					document.getElementById("third").innerHTML = "Dec. 6: Winter Orchestra Cocert"
-				</script>
-
-				<center><p id = "fourth"</p></center>
-				<script>
-					
-					document.getElementById("fourth").innerHTML = "Dec. 8: Winter Band Concert"
-				</script>
-
-				<center><p id = "fifth"</p></center>
-				<script>
-					
-					document.getElementById("fifth").innerHTML = "Dec. 9: Rock the Box Concert"
-				</script>
-
-				<center><p id = "sixth"</p></center>
-				<script>
-					
-					document.getElementById("sixth").innerHTML = "Dec. 10: ACT Test"
-				</script>
-
-				<center><p id = "seventh"</p></center>
-				<script>
-					
-					document.getElementById("seventh").innerHTML = "Dec. 12: Band Booster Meeting"
-				</script>
-
-				<center><p id = "eighth"</p></center>
-				<script>
-					
-					document.getElementById("eighth").innerHTML = "Dec. 13: Winter Choir Concert"
-				</script>
-
-				<center><p id = "Nineth"</p></center>
-				<script>
-					
-					document.getElementById("second").innerHTML = "Dec. 14: Athletic Booster Meeting"
-				</script>
-
-				<center><p id = "tenth"</p></center>
-				<script>
-					
-					document.getElementById("tenth").innerHTML = "Dec. 26- Jan.6: Winter Break"
-				</script>
-
-
-
-
 
 		  		</div>
 		  	</div>
@@ -204,40 +139,41 @@
 
 		</p>
 
+		<!-- This is where all the main code is: StudentInfo variables and functions -->
 		<script>
 
 	 	   	var studentInfo = {
 
 	 	   		// student 2
-	 	   		Cindy : {
+	 	   		Student2 : {
 
-	 	   			schedule : ["7:15am - 8:09am: Marketing", 
-	 	   						"8:15am - 9:15: AP Computer Science", 
-	 	   						"9:21am - 10:16: Public Speaking",
-	 	   						"10:55am - 11:55am: AP Statistics",
-	 	   						"12:00pm - 12:55am: AP Environmental Science",
-	 	   						"1:10pm -  2:00pm: AP Literature"],
+	 	   			schedule : ["9:00am - 9:55am: English", 
+	 	   						"10:01am - 10:56: Statistics", 
+	 	   						"3rd thing",
+	 	   						"4th",
+	 	   						"5th",
+	 	   						"6th"],
 
-	 	   			grades : ["Marketing: A",
-				 	   		  "AP Computer Science: A",
-				 	   		  "Public Speaking: A",
-				 	   		  "AP Statistics: B+",
-				 	   		  "AP Environmental Science: A-",
-				 	   		  "AP Literature: A"],
+	 	   			grades : ["English: A",
+				 	   		  "class2: A",
+				 	   		  "class3: A",
+				 	   		  "class4: A",
+				 	   		  "class5: A",
+				 	   		  "class6: A"],
 
-	 	   			todolist : ["Finish homework", 
-	 	   						"Edit college essays",
-	 	   						"Study for math test",
-	 	   						"Do laundry",
-	 	   						"Meet with counselor",
-	 	   						"Set up dentist appointment"],
+	 	   			todolist : ["first thing", 
+	 	   						"second thing",
+	 	   						"third thing",
+	 	   						"fourth thing",
+	 	   						"fifth thing",
+	 	   						"sixth"],
 
-	 	   			notes : ["Marketing: http://robarmstrong.weebly.com/marketing-1.html",
-	 	   					 "AP Computer Science: https://www.schoology.com/",
-	 	   					 "Public Speaking: http://www.inc.com/ss/jeff-haden/20-public-speaking-tips-best-ted-talks",
-	 	   					 "AP Statistics: http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2151.html",
-	 	   					 "AP Environmental Science: http://moodle.oakland.k12.mi.us/novi/enrol/index.php?id=519",
-	 	   					 "AP Literature: http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2124.html"]
+	 	   			notes : ["CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1"]
 
 	 	   		},
 
@@ -274,35 +210,35 @@
 	 	   		},
 
 	 	   		// student 4	
-	 	   		Nithisha : {
+	 	   		Student4 : {
 
-	 	   			schedule : ["7:15am - 8:09am: Physics", 
-	 	   						"8:15am - 9:15am: Marketing", 
-	 	   						"9:21am - 10:16am: AP French Language",
-	 	   						"10:22am - 11:25am: English",
-	 	   						"12:03pm - 12:57pm: IB Math Studies",
-	 	   						"1:03pm - 1:59pm: AP Computer Science"],
+	 	   			schedule : ["9:00am - 9:55am: English", 
+	 	   						"10:01am - 10:56: Statistics", 
+	 	   						"3rd thing",
+	 	   						"4th",
+	 	   						"5th",
+	 	   						"6th"],
 
-	 	   			grades : ["Physics: A",
-				 	   		  "Marketing: A",
-				 	   		  "AP French Language: A",
-				 	   		  "English: A",
-				 	   		  "IB Math Studies: A",
-				 	   		  "AP Computer Science: A"],
+	 	   			grades : ["English: A",
+				 	   		  "class2: A",
+				 	   		  "class3: A",
+				 	   		  "class4: A",
+				 	   		  "class5: A",
+				 	   		  "class6: A"],
 
-	 	   			todolist : ["Work on the IA for IB math", 
-	 	   						"Study for the computer science test",
-	 	   						"Shoot the video for Girls Who Code",
-	 	   						"Plan the December meeting for GWC",
-	 	   						"Go volunteering",
-	 	   						"_____________"],
+	 	   			todolist : ["first thing", 
+	 	   						"second thing",
+	 	   						"third thing",
+	 	   						"fourth thing",
+	 	   						"fifth thing",
+	 	   						"sixth"],
 
-	 	   			notes : ["Physics: https://www.langtron.com/",
-	 	   					 "Marketing: https://www.robarmstrong.Weebly.com/",
-	 	   					 "AP French Language: https://www.moodle.com/",
-	 	   					 "English: https://www.googleclassroom.com/",
-	 	   					 "IB Math Studies: https://www.schoology.com/",
-	 	   					 "AP Computer Science: https://www.schoology.com/"]
+	 	   			notes : ["CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1",
+	 	   					 "CLASS: link1"]
 	 	   		}
 
 	 	   	};
@@ -314,7 +250,7 @@
 	 	   	function parseSchedule(data){
 	 	   		var ul = document.createElement('ul');
 
-	 	   		for (var i = data.length - 1; i >= 0; i--) {
+	 	   		for (var i = 0; i < data.length; i++) {
 	 	   			var course = data[i];
 	 	   			var li = document.createElement('li');
 	 	   			li.innerHTML = course;
@@ -332,22 +268,20 @@
 
 
 	 	   	function parseToDo(data) {
-	 	   		// create empty unordered_list to hold to do list items
-	 	   		var ul = document.createElement('ul');
-
 	 	   		// get to do list in the order it's listed and
-	 	   		// add each element to the unordered list	
+	 	   		// add each element (individually) to the tile	
 	 	   		for (var i = 0; i < data.length; i++) {
+	 	   			var div = document.createElement('div');
+	 	   			div.className = "input-group";
+
 	 	   			var course = data[i];
-	 	   			var li = document.createElement('li');
-	 	   			li.innerHTML = course;
-	 	   			ul.appendChild(li);
+	 	   			
+	 	   			div.innerHTML ='<span class="input-group-addon no-border"><input onclick="checkboxClicked(this)" type="checkbox" aria-label="Checkbox for following text input"></span>'
+			      		 + '<span class="strikethrough">' + course + '</span>';
+
+			      	document.getElementById('to-do-list').appendChild(div);
+
 	 	   		}
-	 	   		// FIXME: would like to add checkboxes to list
-
-	 	   		// add entire schedule to the 'to-do-list' tile
-	 	   		document.getElementById('to-do-list').appendChild(ul);
-
 	 	   	}//parseToDo()
 
 
@@ -428,14 +362,24 @@
 
 	 	   	function removeTextBoxes() {
 
-	 	   		var victim = document.getElementById('username');
-				victim.removeChild(document.getElementById('username'));
+	 	   		var user = document.getElementById('username');
+	 	   		var password = document.getElementById('password');
 
-				var victim2 = document.getElementById('password');
-				victim2.removeChild(document.getElementById('password'));
+	 	   		user.className += " invisible";
+	 	   		password.className += " invisible";
+
 				return false;
 
 			}//removeTextBox()
+
+			function checkboxClicked(checkbox) {
+				if (checkbox.checked) {
+					checkbox.parentElement.nextSibling.className = "strike";
+				}
+				else {
+					checkbox.parentElement.nextSibling.className = checkbox.parentElement.nextSibling.className.replace("strike", "");
+				}
+			}//checkboxClicked()
 
  	    </script>
 	</body>
