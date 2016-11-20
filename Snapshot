@@ -195,36 +195,30 @@
 	 	   		},
 
 	 	   		// student 3
-	 	   		Student3 : {
+	 	   		Rakshita : {
 
-	 	   			schedule : ["9:00am - 9:55am: English", 
-	 	   						"10:01am - 10:56: Statistics", 
-	 	   						"3rd thing",
-	 	   						"4th",
-	 	   						"5th",
-	 	   						"6th"],
+	 	   			schedule : ["7:15am - 8:09am: AP Computer Science", 
+	 	   						"8:15am - 9:15am: AP Calculus BC", 
+	 	   						"9:21am - 10:16am: AP Psychology",
+	 	   						"10:22am - 11:26am: English 12",
+	 	   						"12:05pm - 12:57pm: Finance",
+	 	   						"1:03pm - 1:59pm: Medical Careers Exploration"],
 
-	 	   			grades : ["English: A",
-				 	   		  "class2: A",
-				 	   		  "class3: A",
-				 	   		  "class4: A",
-				 	   		  "class5: A",
-				 	   		  "class6: A"],
+	 	   			grades : ["AP Computer Science: A-",
+				 	   		  "AP Calculus BC: B",
+				 	   		  "AP Psychology: A",
+				 	   		  "English 12: A+",
+				 	   		  "Finance: A+",
+				 	   		  "Medical Careers Exploration: A+"],
 
-	 	   			todolist : ["first thing", 
-	 	   						"second thing",
-	 	   						"third thing",
-	 	   						"fourth thing",
-	 	   						"fifth thing",
-	 	   						"sixth"],
-
-	 	   			notes : ["CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1"]
-	 	   		},
+	 	   			todolist : ["Email Councelor", 
+	 	   						"Meet for HOSA",
+	 	   						"Plan out next GWC meeting",
+	 	   						"Edit Scholarship Essays",
+	 	   						"Volunteer from 5pm -8pm",
+	 	   						"Finish English Project"]
+	 	   			
+	 	   		}
 
 	 	   		// student 4	
 	 	   		Student4 : {
