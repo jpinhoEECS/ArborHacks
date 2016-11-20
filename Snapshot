@@ -21,7 +21,7 @@
 		<!-- These are the text box fields for name, username, and password -->
 		<center> Your Name: <input type="textarea" name="first_name" id="first_name" class="user_first_name"> </center>
 		<center> Username : <input type="textarea" name="username" id="username"> </center>
-		<center> Password : <input type="password" name="password" id="password"> </center>
+		<center> Password: <input type="password" name="password" id="password"> </center>
 		
 		<center><button onclick="loadAllTiles();">Login</button></center>
 		<br>
@@ -129,22 +129,69 @@
 		  	<!-- TILE 6: UPCOMING EVENTS -->
 		  		<div class="col-md-12 bordered" id="upcoming-events">
 
-		  			<h2>Upcoming Events</h2>
+		  		
 		  			
 
 		  			<center><h2>Upcoming Events</h2></center>
 				<p id = "first"</p>
 				<script>
 					
-					document.getElementById("first").innerHTML = "Thanksgiving Break!"
+					document.getElementById("first").innerHTML = "Nov.24-25: Thanksgiving Break!"
 
 				</script>
 				<center><p id = "second"</p></center>
 				<script>
 					
-					document.getElementById("second").innerHTML = "Novi Open House on November 29th"
+					document.getElementById("second").innerHTML = "Nov. 29: Novi Open House"
 				</script>
 
+				<center><p id = "third"</p></center>
+				<script>
+					
+					document.getElementById("third").innerHTML = "Dec. 6: Winter Orchestra Cocert"
+				</script>
+
+				<center><p id = "fourth"</p></center>
+				<script>
+					
+					document.getElementById("fourth").innerHTML = "Dec. 8: Winter Band Concert"
+				</script>
+
+				<center><p id = "fifth"</p></center>
+				<script>
+					
+					document.getElementById("fifth").innerHTML = "Dec. 9: Rock the Box Concert"
+				</script>
+
+				<center><p id = "sixth"</p></center>
+				<script>
+					
+					document.getElementById("sixth").innerHTML = "Dec. 10: ACT Test"
+				</script>
+
+				<center><p id = "seventh"</p></center>
+				<script>
+					
+					document.getElementById("seventh").innerHTML = "Dec. 12: Band Booster Meeting"
+				</script>
+
+				<center><p id = "eighth"</p></center>
+				<script>
+					
+					document.getElementById("eighth").innerHTML = "Dec. 13: Winter Choir Concert"
+				</script>
+
+				<center><p id = "Nineth"</p></center>
+				<script>
+					
+					document.getElementById("second").innerHTML = "Dec. 14: Athletic Booster Meeting"
+				</script>
+
+				<center><p id = "tenth"</p></center>
+				<script>
+					
+					document.getElementById("tenth").innerHTML = "Dec. 26- Jan.6: Winter Break"
+				</script>
 
 
 
@@ -162,35 +209,35 @@
 	 	   	var studentInfo = {
 
 	 	   		// student 2
-	 	   		Student2 : {
+	 	   		Cindy : {
 
-	 	   			schedule : ["9:00am - 9:55am: English", 
-	 	   						"10:01am - 10:56: Statistics", 
-	 	   						"3rd thing",
-	 	   						"4th",
-	 	   						"5th",
-	 	   						"6th"],
+	 	   			schedule : ["7:15am - 8:09am: Marketing", 
+	 	   						"8:15am - 9:15: AP Computer Science", 
+	 	   						"9:21am - 10:16: Public Speaking",
+	 	   						"10:55am - 11:55am: AP Statistics",
+	 	   						"12:00pm - 12:55am: AP Environmental Science",
+	 	   						"1:10pm -  2:00pm: AP Literature"],
 
-	 	   			grades : ["English: A",
-				 	   		  "class2: A",
-				 	   		  "class3: A",
-				 	   		  "class4: A",
-				 	   		  "class5: A",
-				 	   		  "class6: A"],
+	 	   			grades : ["Marketing: A",
+				 	   		  "AP Computer Science: A",
+				 	   		  "Public Speaking: A",
+				 	   		  "AP Statistics: B+",
+				 	   		  "AP Environmental Science: A-",
+				 	   		  "AP Literature: A"],
 
-	 	   			todolist : ["first thing", 
-	 	   						"second thing",
-	 	   						"third thing",
-	 	   						"fourth thing",
-	 	   						"fifth thing",
-	 	   						"sixth"],
+	 	   			todolist : ["Finish homework", 
+	 	   						"Edit college essays",
+	 	   						"Study for math test",
+	 	   						"Do laundry",
+	 	   						"Meet with counselor",
+	 	   						"Set up dentist appointment"],
 
-	 	   			notes : ["CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1"]
+	 	   			notes : ["Marketing: http://robarmstrong.weebly.com/marketing-1.html",
+	 	   					 "AP Computer Science: https://www.schoology.com/",
+	 	   					 "Public Speaking: http://www.inc.com/ss/jeff-haden/20-public-speaking-tips-best-ted-talks",
+	 	   					 "AP Statistics: http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2151.html",
+	 	   					 "AP Environmental Science: http://moodle.oakland.k12.mi.us/novi/enrol/index.php?id=519",
+	 	   					 "AP Literature: http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2124.html"]
 
 	 	   		},
 
@@ -227,35 +274,35 @@
 	 	   		},
 
 	 	   		// student 4	
-	 	   		Student4 : {
+	 	   		Nithisha : {
 
-	 	   			schedule : ["9:00am - 9:55am: English", 
-	 	   						"10:01am - 10:56: Statistics", 
-	 	   						"3rd thing",
-	 	   						"4th",
-	 	   						"5th",
-	 	   						"6th"],
+	 	   			schedule : ["7:15am - 8:09am: Physics", 
+	 	   						"8:15am - 9:15am: Marketing", 
+	 	   						"9:21am - 10:16am: AP French Language",
+	 	   						"10:22am - 11:25am: English",
+	 	   						"12:03pm - 12:57pm: IB Math Studies",
+	 	   						"1:03pm - 1:59pm: AP Computer Science"],
 
-	 	   			grades : ["English: A",
-				 	   		  "class2: A",
-				 	   		  "class3: A",
-				 	   		  "class4: A",
-				 	   		  "class5: A",
-				 	   		  "class6: A"],
+	 	   			grades : ["Physics: A",
+				 	   		  "Marketing: A",
+				 	   		  "AP French Language: A",
+				 	   		  "English: A",
+				 	   		  "IB Math Studies: A",
+				 	   		  "AP Computer Science: A"],
 
-	 	   			todolist : ["first thing", 
-	 	   						"second thing",
-	 	   						"third thing",
-	 	   						"fourth thing",
-	 	   						"fifth thing",
-	 	   						"sixth"],
+	 	   			todolist : ["Work on the IA for IB math", 
+	 	   						"Study for the computer science test",
+	 	   						"Shoot the video for Girls Who Code",
+	 	   						"Plan the December meeting for GWC",
+	 	   						"Go volunteering",
+	 	   						"_____________"],
 
-	 	   			notes : ["CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1"]
+	 	   			notes : ["Physics: https://www.langtron.com/",
+	 	   					 "Marketing: https://www.robarmstrong.Weebly.com/",
+	 	   					 "AP French Language: https://www.moodle.com/",
+	 	   					 "English: https://www.googleclassroom.com/",
+	 	   					 "IB Math Studies: https://www.schoology.com/",
+	 	   					 "AP Computer Science: https://www.schoology.com/"]
 	 	   		}
 
 	 	   	};
