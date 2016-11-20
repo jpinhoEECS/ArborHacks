@@ -49,7 +49,7 @@
 		  	<div class="col-md-4">
 		  	<!-- TILE 3: CURRENT GRADES -->
 		  		<div class="col-md-12 bordered" id="current-grades">
-		  			<h2>Current Grades</h2>
+		  			<h2>Current Grades</h2> 
 
 
 
@@ -66,6 +66,22 @@
 		  	<!-- TILE 4: LINKS TO COURSE NOTES/SLIDES -->
 		  		<div class="col-md-12 bordered opaque" id="course-notes">
 		  			<h2>Course Notes</h2>
+					<h4>AP Computer Science</h4>
+						<a href="https://www.schoology.com/"><h5 style="font-family:tempus sans itc;">Schoology</h5></a>
+						<a href="https://codehs.com/"><h5 style="font-family:tempus sans itc;">CodeHS</h5></a>
+					<h4>AP Statistics</h4>
+						<a href="http://apstatsmonkey.com/StatsMonkey/Statsmonkey.html">
+						<h5 style="font-family:tempus sans itc;">Stats Monkey</h5></a>
+						<a href="http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2151.html"><h5 style="font-family:tempus sans itc;">AP Central</h5></a>
+					<h4>AP Literature</h4>
+					<a href="http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2124.html"><h5 style="font-family:tempus sans itc;">AP Central</h5></a> 
+					<h4>AP Enviornmental Science</h4>
+					<a href="http://www.bozemanscience.com/ap-environmental-science/"><h5 style="font-family:tempus sans itc;">Bozeman Science</h5></a> 
+					<h4>Public Speaking</h4>
+					<a href="https://www.americanrhetoric.com/newtop100speeches.htm"><h5 style="font-family:tempus sans itc;">American Rhetoric</h5></a> 
+					<h4>Marketing</h4>
+					<a href="https://www.coursesites.com/webapps/Bb-sites-course-creation-BBLEARN/pages/index.html"><h5 style="font-family:tempus sans itc;">Bozeman Science</h5></a> 
+
 
 
 
@@ -104,6 +120,10 @@
 		  	<div class="col-md-4">
 		  	<!-- TILE 6: UPCOMING EVENTS -->
 		  		<div class="col-md-12 bordered" id="upcoming-events">
+
+		  			<h2>Upcoming Events</h2>
+		  			
+
 		  			<center><h2>Upcoming Events</h2></center>
 				<p id = "first"</p>
 				<script>
@@ -116,6 +136,7 @@
 					
 					document.getElementById("second").innerHTML = "Novi Open House on November 29th"
 				</script>
+
 
 
 
