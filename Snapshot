@@ -1,104 +1,149 @@
 <html>
 	<head>
-		<title><p id="main_title">My School Snapshot</p></title>
+		<title>My School Snapshot</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="main.css">
 	</head>
 
 	<body background="Novi_watermark.jpg">
 		<p>
 		<center><h1>My School Snapshot</h1></center>
+		<center><h2 id="below_main_title"></h2></center>
 		<center>  <select name="schools">
 			<option value="choose">Choose Your School</option>
   			<option value="Novi">Novi High School</option>
 		  	<option value="Pioneer">Pioneer High School</option>
 		  	<option value="Huron">Huron High School</option> </select></center>
-		<center> Username: <input type="textarea" name="Username"> </center>
-		<center> Password:  <input type="textarea" name="Password"> </center>
-		<center><button type="submit" formaction="">Submit</button></center>
-		<!-- fixme: program button (make stuff above invisible or load new page) -->
+		<center> Your Name: <input type="textarea" name="first_name" id="first_name"> </center>
+		<center><button onclick="username_and_password_prompt();">Proceed to Login</button></center>
+
 		<!-- formaction="URL" (can we make this go to the Novi website?) -->
 
-		<!-- START TILE 1: DAILY SCHEDULE -->
+		<!-- ROW 1 -->
+		<center class="container-fluid"><div class="row center-block">
+
+		  	<div class="col-md-4 ">
+		  	<!-- TILE 1: DAILY SCHEDULE -->
+		  		<div class="col-md-12 bordered opaque" id="daily-schedule">
+		  			<h2>Daily Schedule</h2>
+
+
+
+		  		</div>
+		  	</div>
+
+		  	<!-- TILE 2: TO DO LIST -->
+		  	<div class="col-md-4">
+		  		<div class="col-md-12 bordered" id="to-do-list">
+		  		<h2>To Do List</h2>
+		  			<input type="checkbox"><input type="textarea" name="todo1"><br>
+					<input type="checkbox"><input type="textarea" name="todo2"><br>
+					<input type="checkbox"><input type="textarea" name="todo3"><br>
+					<input type="checkbox"><input type="textarea" name="todo4"><br>
+					<input type="checkbox"><input type="textarea" name="todo5"><br>
+					<strike>not yet available!</strike>
+					<!-- FIXME: add if statements to strike through text of completed tasks -->
+		  		</div>
+		  	</div>
+
+		  	<div class="col-md-4">
+		  	<!-- TILE 3: CURRENT GRADES -->
+		  		<div class="col-md-12 bordered" id="current-grades">
+		  			<h2>Current Grades</h2>
+
+
+
+		  		</div>
+		  	</div>
+		</div></center>
 		<br>
-		<br>
-		<center><h2>Daily Schedule</h2></center>
-		<br>
+
+
+ 		<!-- ROW 2 -->
+		<center class="container-fluid"><div class="row center-block">
+
+		  	<div class="col-md-4 ">
+		  	<!-- TILE 4: LINKS TO COURSE NOTES/SLIDES -->
+		  		<div class="col-md-12 bordered opaque" id="course-notes">
+		  			<h2>Course Notes</h2>
 
 
 
+		  		</div>
+		  	</div>
+
+		  	<!-- TILE 5: TODAY'S LUNCH OPTIONS -->
+		  	<div class="col-md-4">
+		  		<div class="col-md-12 bordered" id="lunch">
+		  		<h2>Today's Lunch Options</h2>
+		  	
 
 
-		<!-- END TILE 1 -->
-		<!-- START TILE 2: TO DO LIST  -->
-		<br>
-		<br>
-		<center><h2>To Do List</h2></center>
+		  		</div>
+		  	</div>
 
-		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
-		<center><input type="checkbox"><input type="textarea" name="todo2"></center>
-		<center><input type="checkbox"><input type="textarea" name="todo3"></center>
-		<center><input type="checkbox"><input type="textarea" name="todo4"></center>
-		<center><input type="checkbox"><input type="textarea" name="todo5"></center>
-		<center><strike>not yet available!</strike></center>
-		<!-- FIXME: add if statements to strike through text of completed tasks -->
-
-
-		<!-- END TILE 2 -->
-		<!-- START TILE 3: CURRENT GRADES -->
-		<br>
-		<br>
-		<center><h2>Current Grades</h2></center>
+		  	<div class="col-md-4">
+		  	<!-- TILE 6: UPCOMING EVENTS -->
+		  		<div class="col-md-12 bordered" id="upcoming-events">
+		  			<h2>Upcoming Events</h2>
 
 
 
+		  		</div>
+		  	</div>
+		</div></center>
 
 
-		<!-- END TILE 3 -->
-		<!-- START TILE 4: LINKS TO COURSE NOTES/SLIDES -->
-
-
-
-
-
-
-		<!-- END TILE 4 -->
-		<!-- START TILE 5: THIS WEEK'S LUNCH OPTIONS -->
-
-
-
-
-
-
-
-		<!-- END TILE 5 -->
-		<!-- START TILE 6: UPCOMING EVENTS (FOOTBALL GAMES, ETC.) -->
-
-
-
-
-
-
-
-		<!-- END TILE 6 -->
-		<script>
- 	   		// alert("Hello, world!");
- 	   		// document.getElementById("first").innerHTML = "input into first paragraph"
- 	   		var x = prompt("Please enter a number", "0"); 
- 	   		// need variables for line above 0 is default value in example
- 	   		document.getElementById("x").innerHTML = x;
-
-	 	   function add(p1, p2) {
-	 	   		return p1 + p2;
-	 	   }
-
-	 	   document.getElementById("first").innerHTML = add(5, 6);
-
-	 	   function put_name_in_title() {
-	 	   		var name = prompt("Please enter your name", "");
-	 	   		document.getElementById("main_title").innerHTML = name + "'s School Snapshot";
-	 	   }
- 	    </script>
-
-		<!-- !--<img src="blah.jpg"> -->
 		</p>
+
+		<script>
+	 	   	function username_and_password_prompt() {
+	 	   		var first = document.getElementById("first_name").value;
+	 	   		var username = prompt("Username:", "");
+	 	   		var password = prompt("Password:", "");
+	 	   		document.getElementById("below_main_title").innerHTML = "Welcome " + first + "!";
+	 	   	}
+
+	 	   	var studentInfo = {
+
+	 	   		jason : {
+
+	 	   			schedule : ["eat","drink","poo"],
+
+	 	   			grades : {
+
+	 	   				english: 10,
+	 	   				math: 0
+
+	 	   			}
+
+	 	   		}
+
+	 	   	};
+
+	 	   	function getStudentSchedule(name){
+
+	 	   		return studentInfo[name].schedule;
+
+	 	   	}
+
+	 	   	function parseScheudule(data){
+
+	 	   		var ul = document.createElement('ul');
+
+	 	   		for (var i = data.length - 1; i >= 0; i--) {
+	 	   			var course = data[i];
+	 	   			var li = document.createElement('li');
+	 	   			li.innerHTML = course;
+	 	   			ul.appendChild(li);
+	 	   		}
+
+	 	   		document.getElementById('daily-schedule').appendChild(ul);
+
+	 	   	}
+
+	 	   	parseScheudule(getStudentSchedule('jason'));
+
+ 	    </script>
 	</body>
 </html>
