@@ -26,9 +26,8 @@
 		<center><button onclick="loadAllTiles();">Login</button></center>
 		<br>
 
-
 		<!-- ROW 1 -->
-		<center class="container-fluid"><div class="row center-block">
+		<center class="container-fluid"><div class="row center-block" type="row1-tiles">
 
 		  	<div class="col-md-4 ">
 		  	<!-- TILE 1: DAILY SCHEDULE -->
@@ -61,7 +60,7 @@
 
 
  		<!-- ROW 2 -->
-		<center class="container-fluid"><div class="row center-block">
+		<center class="container-fluid"><div class="row center-block" type="row2-tiles">
 
 		  	<div class="col-md-4 ">
 		  	<!-- TILE 4: LINKS TO COURSE NOTES/SLIDES -->
@@ -111,49 +110,31 @@
 
 				</script>
 				<center><p id = "second"</p></center>
-				<script>
-					document.getElementById("second").innerHTML = "Nov. 29: Novi Open House"
-				</script>
+				<script>document.getElementById("second").innerHTML = "Nov. 29: Novi Open House"</script>
 
 				<center><p id = "third"</p></center>
-				<script>
-					document.getElementById("third").innerHTML = "Dec. 6: Winter Orchestra Cocert"
-				</script>
+				<script>document.getElementById("third").innerHTML = "Dec. 6: Winter Orchestra Cocert"</script>
 
 				<center><p id = "fourth"</p></center>
-				<script>
-					document.getElementById("fourth").innerHTML = "Dec. 8: Winter Band Concert"
-				</script>
+				<script>document.getElementById("fourth").innerHTML = "Dec. 8: Winter Band Concert"</script>
 
 				<center><p id = "fifth"</p></center>
-				<script>
-					document.getElementById("fifth").innerHTML = "Dec. 9: Rock the Box Concert"
-				</script>
+				<script>document.getElementById("fifth").innerHTML = "Dec. 9: Rock the Box Concert"	</script>
 
 				<center><p id = "sixth"</p></center>
-				<script>
-					document.getElementById("sixth").innerHTML = "Dec. 10: ACT Test"
-				</script>
+				<script>document.getElementById("sixth").innerHTML = "Dec. 10: ACT Test"</script>
 
 				<center><p id = "seventh"</p></center>
-				<script>
-					document.getElementById("seventh").innerHTML = "Dec. 12: Band Booster Meeting"
-				</script>
+				<script>document.getElementById("seventh").innerHTML = "Dec. 12: Band Booster Meeting"</script>
 
 				<center><p id = "eighth"</p></center>
-				<script>
-					document.getElementById("eighth").innerHTML = "Dec. 13: Winter Choir Concert"
-				</script>
+				<script>document.getElementById("eighth").innerHTML = "Dec. 13: Winter Choir Concert"</script>
 
 				<center><p id = "Nineth"</p></center>
-				<script>
-					document.getElementById("second").innerHTML = "Dec. 14: Athletic Booster Meeting"
-				</script>
+				<script>document.getElementById("second").innerHTML = "Dec. 14: Athletic Booster Meeting"</script>
 
 				<center><p id = "tenth"</p></center>
-				<script>
-					document.getElementById("tenth").innerHTML = "Dec. 26- Jan.6: Winter Break"
-				</script>
+				<script>document.getElementById("tenth").innerHTML = "Dec. 26- Jan.6: Winter Break"</script>
 
 		  		</div>
 		  	</div>
@@ -327,17 +308,16 @@
 	 	   		// get the student's CURRENT GRADES, parse it, and put it into tile
 	 	   		parseGrades(getStudentGrades(name));
 
-	 	   		// get the student's COURSE NOTES, parse it, and put it into tile
-	 	   		// REMOVED: Too complicated to have separate links
-	 	   		//parseNotes(getStudentNotes(name));
-
 	 	   		// remove username and password text boxes
 	 	   		removeTextBoxes();
+
+	 	   		// tiles are invisible until we show
+	 	   		//showTiles()
+
 	 	   	}//loadAllTiles()
 
 
 	 	   	function removeTextBoxes() {
-
 	 	   		var user = document.getElementById('username');
 	 	   		var password = document.getElementById('password');
 
@@ -345,8 +325,8 @@
 	 	   		password.className += " invisible";
 
 				return false;
-
 			}//removeTextBox()
+
 
 			function checkboxClicked(checkbox) {
 				if (checkbox.checked) {
@@ -356,6 +336,13 @@
 					checkbox.parentElement.nextSibling.className = checkbox.parentElement.nextSibling.className.replace("strike", "");
 				}
 			}//checkboxClicked()
+
+
+			function showTiles() {
+				//row1-tiles.className = "row center-block";
+				//row2-tiles.className = row2-tiles.replace("invisible", "");
+				//row1-tiles.parentElement.className = "row center-block";
+			}//showTiles()
 
  	    </script>
 	</body>
