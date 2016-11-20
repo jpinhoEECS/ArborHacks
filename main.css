@@ -2,6 +2,12 @@
 	border: 2px solid black;
 }
 
-.opaque {
-	background-color: blue;
+.opaque-green {
+	background-color: #E6F5EE;
+	opacity: 50;
+}
+
+.opaque-white {
+	background-color: white;
+	opacity: 50
 }

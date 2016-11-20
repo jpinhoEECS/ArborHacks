@@ -4,12 +4,12 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="main.css">
 		<script
-			  src="http://code.jquery.com/jquery-3.1.1.min.js"
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
 			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 			  crossorigin="anonymous"></script>
 	</head>
 
-	<body background="Novi_watermark.jpg">
+	<body background="Novi_watermark.jpg" id="body">
 		<p>
 		<center><h1>My School Snapshot</h1></center>
 		<center><h2 id="below_main_title"></h2></center>
@@ -32,7 +32,7 @@
 
 		  	<div class="col-md-4 ">
 		  	<!-- TILE 1: DAILY SCHEDULE -->
-		  		<div class="col-md-12 bordered opaque" id="daily-schedule">
+		  		<div class="col-md-12 bordered opaque-green" id="daily-schedule">
 		  			<h2>Daily Schedule</h2>
 
 
@@ -42,7 +42,7 @@
 
 		  	<!-- TILE 2: TO DO LIST -->
 		  	<div class="col-md-4">
-		  		<div class="col-md-12 bordered" id="to-do-list">
+		  		<div class="col-md-12 bordered opaque-white" id="to-do-list">
 		  		<h2>To Do List</h2>
 		  		<!-- 
 		  			<input type="checkbox"><input type="textarea" name="todo1"><br>
@@ -58,7 +58,7 @@
 
 		  	<div class="col-md-4">
 		  	<!-- TILE 3: CURRENT GRADES -->
-		  		<div class="col-md-12 bordered" id="current-grades">
+		  		<div class="col-md-12 bordered opaque-green" id="current-grades">
 		  			<h2>Current Grades</h2> 
 
 
@@ -74,7 +74,7 @@
 
 		  	<div class="col-md-4 ">
 		  	<!-- TILE 4: LINKS TO COURSE NOTES/SLIDES -->
-		  		<div class="col-md-12 bordered opaque" id="course-notes">
+		  		<div class="col-md-12 bordered opaque-white" id="course-notes">
 		  			<h2>Course Notes</h2>
 					<h4>AP Computer Science</h4>
 						<a href="https://www.schoology.com/"><h5 style="font-family:tempus sans itc;">Schoology</h5></a>
@@ -98,7 +98,7 @@
 
 		  	<!-- TILE 5: TODAY'S LUNCH OPTIONS -->
 		  	<div class="col-md-4">
-		  		<div class="col-md-12 bordered" id="lunch">
+		  		<div class="col-md-12 bordered opaque-green" id="lunch">
 		  		<h2>Today's Lunch Options</h2>
 
 		  		<img src="new.jpg" width="350px" height="270px">
@@ -127,7 +127,7 @@
 
 		  	<div class="col-md-4">
 		  	<!-- TILE 6: UPCOMING EVENTS -->
-		  		<div class="col-md-12 bordered" id="upcoming-events">
+		  		<div class="col-md-12 bordered opaque-white" id="upcoming-events">
 
 		  			<h2>Upcoming Events</h2>
 		  			
@@ -372,7 +372,23 @@
 
 	 	   		// get the student's COURSE NOTES, parse it, and put it into tile
 	 	   		parseNotes(getStudentNotes(name));
+
+	 	   		// remove username and password text boxes
+	 	   		//FIXME
+	 	   		removeTextBoxes();
 	 	   	}//loadAllTiles()
+
+
+	 	   	function removeTextBoxes() {
+
+	 	   		var victim = document.getElementById('username');
+				victim.removeChild(document.getElementById('username'));
+
+				var victim2 = document.getElementById('password');
+				victim2.removeChild(document.getElementById('password'));
+				return false;
+
+			}//removeTextBox()
 
  	    </script>
 	</body>
