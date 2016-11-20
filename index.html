@@ -34,9 +34,8 @@
 		  	<!-- TILE 1: DAILY SCHEDULE -->
 		  		<div class="col-md-12 bordered opaque-green" id="daily-schedule">
 		  			<h2>Daily Schedule</h2>
-
-
-
+		  			<!-- NO CODE GOES HERE: everything gets filled in from functions
+		  									below after they click "Login" -->
 		  		</div>
 		  	</div>
 
@@ -44,6 +43,8 @@
 		  	<div class="col-md-4">
 		  		<div class="col-md-12 bordered opaque-white" id="to-do-list">
 		  		<h2>To Do List</h2>
+		  		<!-- NO CODE GOES HERE: everything gets filled in from functions
+		  								below after they click "Login" -->
 		  		<!-- 
 		  			<input type="checkbox"><input type="textarea" name="todo1"><br>
 					<input type="checkbox"><input type="textarea" name="todo2"><br>
@@ -60,9 +61,8 @@
 		  	<!-- TILE 3: CURRENT GRADES -->
 		  		<div class="col-md-12 bordered opaque-green" id="current-grades">
 		  			<h2>Current Grades</h2> 
-
-
-
+		  			<!-- NO CODE GOES HERE: everything gets filled in from functions
+		  									below after they click "Login" -->
 		  		</div>
 		  	</div>
 		</div></center>
@@ -103,24 +103,13 @@
 
 		  		<img src="new.jpg" width="350px" height="270px">
 
-
-
 		  		<br>
 		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_21-25_wk4.pdf">Lunch Menu Week of Nov.21-25</a>
-		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_28-dec_2_wk1.pdf">Lunch Menu Week of Nov.28-Dec. 2</a>
-		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_5-9_wk2.pdf">Lunch Menu Week of Dec.5-9</a>
-		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_12-16_wk3.pdf">Lunch Menu Week of Dec.12-16</a>
-		  		<br>
-		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_19-23_wk4.pdf">Lunch Menu Week of Dec.19-23</a>
-
-
-
-		  	
-
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_21-25_wk4.pdf">Lunch Menu Week of Nov. 21 - 25</a><br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_28-dec_2_wk1.pdf">Lunch Menu Week of Nov. 28 - Dec. 2</a><br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_5-9_wk2.pdf">Lunch Menu Week of Dec. 5 - 9</a><br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_12-16_wk3.pdf">Lunch Menu Week of Dec. 12 - 16</a><br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_19-23_wk4.pdf">Lunch Menu Week of Dec. 19 - 23</a>
 
 		  		</div>
 		  	</div>
@@ -128,27 +117,19 @@
 		  	<div class="col-md-4">
 		  	<!-- TILE 6: UPCOMING EVENTS -->
 		  		<div class="col-md-12 bordered opaque-white" id="upcoming-events">
-
 		  			<h2>Upcoming Events</h2>
 		  			
-
-		  			<center><h2>Upcoming Events</h2></center>
-				<p id = "first"</p>
+				<center><p id = "first"></p></center>
 				<script>
 					
 					document.getElementById("first").innerHTML = "Thanksgiving Break!"
 
 				</script>
-				<center><p id = "second"</p></center>
+				<center><p id = "second"></p></center>
 				<script>
 					
 					document.getElementById("second").innerHTML = "Novi Open House on November 29th"
 				</script>
-
-
-
-
-
 
 		  		</div>
 		  	</div>
@@ -157,6 +138,7 @@
 
 		</p>
 
+		<!-- This is where all the main code is: StudentInfo variables and functions -->
 		<script>
 
 	 	   	var studentInfo = {
