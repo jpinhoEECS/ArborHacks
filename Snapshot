@@ -15,6 +15,7 @@
 		  	<option value="Pioneer">Pioneer High School</option>
 		  	<option value="Huron">Huron High School</option> </select></center>
 		<center> Your Name: <input type="textarea" name="first_name" id="first_name"> </center>
+		<br>
 		<center><button onclick="username_and_password_prompt();">Proceed to Login</button></center>
 
 		<!-- formaction="URL" (can we make this go to the Novi website?) -->
@@ -26,9 +27,8 @@
 		  	<!-- TILE 1: DAILY SCHEDULE -->
 		  		<div class="col-md-12 bordered opaque" id="daily-schedule">
 		  			<h2>Daily Schedule</h2>
-
-
-
+		  			<!-- NO CODE GOES HERE: everything for "Daily Schedule" is handled 
+		  							        automatically by functions below (based on name)-->
 		  		</div>
 		  	</div>
 
@@ -50,9 +50,8 @@
 		  	<!-- TILE 3: CURRENT GRADES -->
 		  		<div class="col-md-12 bordered" id="current-grades">
 		  			<h2>Current Grades</h2>
-
-
-
+		  			<!-- NO CODE GOES HERE: everything for "Daily Schedule" is handled 
+		  							        automatically by functions below (based on name)-->
 		  		</div>
 		  	</div>
 		</div></center>
@@ -111,38 +110,66 @@
 	 	   			schedule : ["eat","drink","poo"],
 
 	 	   			grades : {
-
 	 	   				english: 10,
 	 	   				math: 0
 
 	 	   			}
 
+	 	   			notes: {
+	 	   				class1: link_to_class1_notes
+	 	   				//
+	 	   			}
+
 	 	   		}
+
+	 	   		// student 2
+
+	 	   		// student 3
 
 	 	   	};
 
-	 	   	function getStudentSchedule(name){
+	 	   	function getStudentSchedule(name) {
+	 	   		// make sure name is valid
+	 	   		if (studentInfo[name]) {
+	 	   			return studentInfo[name].schedule;
+	 	   		}
+	 	   		else {
+	 	   			return 0;
+	 	   		}
+	 	   	}//getStudentSchedule()
 
-	 	   		return studentInfo[name].schedule;
-
-	 	   	}
-
-	 	   	function parseScheudule(data){
-
+	 	   	function parseSchedule(data) {
+	 	   		// create empty unordered_list to hold courses
 	 	   		var ul = document.createElement('ul');
 
-	 	   		for (var i = data.length - 1; i >= 0; i--) {
+	 	   		// get student schedule in the order it's listed and
+	 	   		// add each element to the unordered list	
+	 	   		for (var i = 0; i < data.length; i++) {
 	 	   			var course = data[i];
 	 	   			var li = document.createElement('li');
 	 	   			li.innerHTML = course;
 	 	   			ul.appendChild(li);
 	 	   		}
 
+	 	   		// add entire schedule to the 'daily-schedule' tile
 	 	   		document.getElementById('daily-schedule').appendChild(ul);
 
-	 	   	}
+	 	   	}//parseSchedule()
 
-	 	   	parseScheudule(getStudentSchedule('jason'));
+	 	   	// load all of the tiles based on name entered 
+	 	   	// (this function should be called when user clicks "Login")
+	 	   	function loadAllTiles(name) {
+	 	   		// get the student's SCHEDULE, parse it, and put it into tile
+	 	   		parseSchedule(getStudentSchedule(name));
+
+	 	   		// get the student's TO DO LIST, parse it, and put it into tile
+
+	 	   		// get the student's CURRENT GRADES, parse it, and put it into tile
+
+	 	   		// get the student's COURSE NOTES, parse it, and put it into tile
+
+	 	   	}//loadAllTiles()
+	 	   	
 
  	    </script>
 	</body>
