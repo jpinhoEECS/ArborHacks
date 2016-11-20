@@ -43,18 +43,8 @@
 		  	<div class="col-md-4">
 		  		<div class="col-md-12 bordered opaque-white" id="to-do-list">
 		  		<h2>To Do List</h2>
-
 		  		<!-- NO CODE GOES HERE: everything gets filled in from functions
 		  								below after they click "Login" -->
-		  		<!-- 
-		  			<input type="checkbox"><input type="textarea" name="todo1"><br>
-					<input type="checkbox"><input type="textarea" name="todo2"><br>
-					<input type="checkbox"><input type="textarea" name="todo3"><br>
-					<input type="checkbox"><input type="textarea" name="todo4"><br>
-					<input type="checkbox"><input type="textarea" name="todo5"><br>
-					<strike>not yet available!</strike>
-					-->
-					<!-- FIXME: add if statements to strike through text of completed tasks -->
 		  		</div>
 		  	</div>
 
@@ -93,7 +83,6 @@
 					<h4>Marketing</h4>
 					<a href="https://www.coursesites.com/webapps/Bb-sites-course-creation-BBLEARN/pages/index.html"><h5 style="font-family:tempus sans itc;">Bozeman Science</h5></a> 
 
-
 		  		</div>
 		  	</div>
 
@@ -103,15 +92,12 @@
 		  		<h2>Today's Lunch Options</h2>
 
 		  		<img src="new.jpg" width="350px" height="270px">
-
-		  		<br>
-		  		<br>
+		  		<br><br>
 		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_21-25_wk4.pdf">Lunch Menu Week of Nov. 21 - 25</a><br>
 		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_28-dec_2_wk1.pdf">Lunch Menu Week of Nov. 28 - Dec. 2</a><br>
 		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_5-9_wk2.pdf">Lunch Menu Week of Dec. 5 - 9</a><br>
 		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_12-16_wk3.pdf">Lunch Menu Week of Dec. 12 - 16</a><br>
 		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_19-23_wk4.pdf">Lunch Menu Week of Dec. 19 - 23</a>
-
 		  		</div>
 		  	</div>
 
@@ -136,7 +122,6 @@
 		  	</div>
 		</div></center>
 
-
 		</p>
 
 		<!-- This is where all the main code is: StudentInfo variables and functions -->
@@ -144,103 +129,81 @@
 
 	 	   	var studentInfo = {
 
-	 	   		// student 2
-	 	   		Student2 : {
+	 	   		Cindy : {
 
-	 	   			schedule : ["9:00am - 9:55am: English", 
-	 	   						"10:01am - 10:56: Statistics", 
-	 	   						"3rd thing",
-	 	   						"4th",
-	 	   						"5th",
-	 	   						"6th"],
+	 	   			schedule : ["7:15am - 8:09am: Marketing", 
+	 	   						"8:15am - 9:15: AP Computer Science", 
+	 	   						"9:21am - 10:16: Public Speaking",
+	 	   						"10:55am - 11:55am: AP Statistics",
+	 	   						"12:00pm - 12:55am: AP Environmental Science",
+	 	   						"1:10pm -  2:00pm: AP Literature"],
 
-	 	   			grades : ["English: A",
-				 	   		  "class2: A",
-				 	   		  "class3: A",
-				 	   		  "class4: A",
-				 	   		  "class5: A",
-				 	   		  "class6: A"],
+	 	   			grades : ["Marketing: A",
+				 	   		  "AP Computer Science: A",
+				 	   		  "Public Speaking: A",
+				 	   		  "AP Statistics: B+",
+				 	   		  "AP Environmental Science: A-",
+				 	   		  "AP Literature: A"],
 
-	 	   			todolist : ["first thing", 
-	 	   						"second thing",
-	 	   						"third thing",
-	 	   						"fourth thing",
-	 	   						"fifth thing",
-	 	   						"sixth"],
-
-	 	   			notes : ["CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1"]
+	 	   			todolist : ["Finish ArborHacks Hack",
+	 	   						"Finish homework", 
+	 	   						"Edit college essays",
+	 	   						"Study for math test",
+	 	   						"Do laundry",
+	 	   						"Meet with counselor",
+	 	   						"Set up dentist appointment"]
 
 	 	   		},
 
-	 	   		// student 3
-	 	   		Student3 : {
+	 	   		Rakshita : {
 
-	 	   			schedule : ["9:00am - 9:55am: English", 
-	 	   						"10:01am - 10:56: Statistics", 
-	 	   						"3rd thing",
-	 	   						"4th",
-	 	   						"5th",
-	 	   						"6th"],
+	 	   			schedule : ["7:15am - 8:09am: AP Computer Science", 
+	 	   						"8:15am - 9:15am: AP Calculus BC", 
+	 	   						"9:21am - 10:16am: AP Psychology",
+	 	   						"10:22am - 11:26am: English 12",
+	 	   						"12:05pm - 12:57pm: Finance",
+	 	   						"1:03pm - 1:59pm: Medical Careers Exploration"],
 
-	 	   			grades : ["English: A",
-				 	   		  "class2: A",
-				 	   		  "class3: A",
-				 	   		  "class4: A",
-				 	   		  "class5: A",
-				 	   		  "class6: A"],
+	 	   			grades : ["AP Computer Science: A-",
+				 	   		  "AP Calculus BC: B",
+				 	   		  "AP Psychology: A",
+				 	   		  "English 12: A+",
+				 	   		  "Finance: A+",
+				 	   		  "Medical Careers Exploration: A+"],
 
-	 	   			todolist : ["first thing", 
-	 	   						"second thing",
-	 	   						"third thing",
-	 	   						"fourth thing",
-	 	   						"fifth thing",
-	 	   						"sixth"],
-
-	 	   			notes : ["CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1"]
+	 	   			todolist : ["Finish ArborHacks Hack",
+	 	   						"Email Councelor", 
+	 	   						"Meet for HOSA",
+	 	   						"Plan out next GWC meeting",
+	 	   						"Edit Scholarship Essays",
+	 	   						"Volunteer from 5pm -8pm",
+	 	   						"Finish English Project"]
 	 	   		},
+	
+	 	   		Nithisha : {
 
-	 	   		// student 4	
-	 	   		Student4 : {
+	 	   			schedule : ["7:15am - 8:09am: Physics", 
+	 	   						"8:15am - 9:15am: Marketing", 
+	 	   						"9:21am - 10:16am: AP French Language",
+	 	   						"10:22am - 11:25am: English",
+	 	   						"12:03pm - 12:57pm: IB Math Studies",
+	 	   						"1:03pm - 1:59pm: AP Computer Science"],
 
-	 	   			schedule : ["9:00am - 9:55am: English", 
-	 	   						"10:01am - 10:56: Statistics", 
-	 	   						"3rd thing",
-	 	   						"4th",
-	 	   						"5th",
-	 	   						"6th"],
+	 	   			grades : ["Physics: A",
+				 	   		  "Marketing: A",
+				 	   		  "AP French Language: A",
+				 	   		  "English: A",
+				 	   		  "IB Math Studies: A",
+				 	   		  "AP Computer Science: A"],
 
-	 	   			grades : ["English: A",
-				 	   		  "class2: A",
-				 	   		  "class3: A",
-				 	   		  "class4: A",
-				 	   		  "class5: A",
-				 	   		  "class6: A"],
-
-	 	   			todolist : ["first thing", 
-	 	   						"second thing",
-	 	   						"third thing",
-	 	   						"fourth thing",
-	 	   						"fifth thing",
-	 	   						"sixth"],
-
-	 	   			notes : ["CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1",
-	 	   					 "CLASS: link1"]
+	 	   			todolist : ["Finish ArborHacks Hack",
+	 	   						"Work on the IA for IB math", 
+	 	   						"Study for the computer science test",
+	 	   						"Shoot the video for Girls Who Code",
+	 	   						"Plan the December meeting for GWC",
+	 	   						"Go volunteering",
+	 	   						"_____________"]
 	 	   		}
-
 	 	   	};
 
 	 	   	function getStudentSchedule(name){
@@ -355,7 +318,6 @@
 	 	   		parseNotes(getStudentNotes(name));
 
 	 	   		// remove username and password text boxes
-	 	   		//FIXME
 	 	   		removeTextBoxes();
 	 	   	}//loadAllTiles()
 
