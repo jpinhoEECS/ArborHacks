@@ -26,6 +26,7 @@
 		<center><button onclick="loadAllTiles();">Login</button></center>
 		<br>
 
+
 		<!-- ROW 1 -->
 		<center class="container-fluid"><div class="row center-block">
 
@@ -33,8 +34,9 @@
 		  	<!-- TILE 1: DAILY SCHEDULE -->
 		  		<div class="col-md-12 bordered opaque" id="daily-schedule">
 		  			<h2>Daily Schedule</h2>
-		  			<!-- NO CODE GOES HERE: everything for "Daily Schedule" is handled 
-		  							        automatically by functions below (based on name)-->
+
+
+
 		  		</div>
 		  	</div>
 
@@ -57,9 +59,10 @@
 		  	<div class="col-md-4">
 		  	<!-- TILE 3: CURRENT GRADES -->
 		  		<div class="col-md-12 bordered" id="current-grades">
-		  			<h2>Current Grades</h2>
-		  			<!-- NO CODE GOES HERE: everything for "Daily Schedule" is handled 
-		  							        automatically by functions below (based on name)-->
+		  			<h2>Current Grades</h2> 
+
+
+
 		  		</div>
 		  	</div>
 		</div></center>
@@ -73,7 +76,21 @@
 		  	<!-- TILE 4: LINKS TO COURSE NOTES/SLIDES -->
 		  		<div class="col-md-12 bordered opaque" id="course-notes">
 		  			<h2>Course Notes</h2>
-
+					<h4>AP Computer Science</h4>
+						<a href="https://www.schoology.com/"><h5 style="font-family:tempus sans itc;">Schoology</h5></a>
+						<a href="https://codehs.com/"><h5 style="font-family:tempus sans itc;">CodeHS</h5></a>
+					<h4>AP Statistics</h4>
+						<a href="http://apstatsmonkey.com/StatsMonkey/Statsmonkey.html">
+						<h5 style="font-family:tempus sans itc;">Stats Monkey</h5></a>
+						<a href="http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2151.html"><h5 style="font-family:tempus sans itc;">AP Central</h5></a>
+					<h4>AP Literature</h4>
+					<a href="http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/2124.html"><h5 style="font-family:tempus sans itc;">AP Central</h5></a> 
+					<h4>AP Enviornmental Science</h4>
+					<a href="http://www.bozemanscience.com/ap-environmental-science/"><h5 style="font-family:tempus sans itc;">Bozeman Science</h5></a> 
+					<h4>Public Speaking</h4>
+					<a href="https://www.americanrhetoric.com/newtop100speeches.htm"><h5 style="font-family:tempus sans itc;">American Rhetoric</h5></a> 
+					<h4>Marketing</h4>
+					<a href="https://www.coursesites.com/webapps/Bb-sites-course-creation-BBLEARN/pages/index.html"><h5 style="font-family:tempus sans itc;">Bozeman Science</h5></a> 
 
 
 		  		</div>
@@ -83,6 +100,25 @@
 		  	<div class="col-md-4">
 		  		<div class="col-md-12 bordered" id="lunch">
 		  		<h2>Today's Lunch Options</h2>
+
+		  		<img src="new.jpg" width="350px" height="270px">
+
+
+
+		  		<br>
+		  		<br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_21-25_wk4.pdf">Lunch Menu Week of Nov.21-25</a>
+		  		<br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_nov_28-dec_2_wk1.pdf">Lunch Menu Week of Nov.28-Dec. 2</a>
+		  		<br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_5-9_wk2.pdf">Lunch Menu Week of Dec.5-9</a>
+		  		<br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_12-16_wk3.pdf">Lunch Menu Week of Dec.12-16</a>
+		  		<br>
+		  		<a href="http://www.novi.k12.mi.us/downloads/fs_docs/hs_dec_19-23_wk4.pdf">Lunch Menu Week of Dec.19-23</a>
+
+
+
 		  	
 
 
@@ -92,7 +128,25 @@
 		  	<div class="col-md-4">
 		  	<!-- TILE 6: UPCOMING EVENTS -->
 		  		<div class="col-md-12 bordered" id="upcoming-events">
+
 		  			<h2>Upcoming Events</h2>
+		  			
+
+		  			<center><h2>Upcoming Events</h2></center>
+				<p id = "first"</p>
+				<script>
+					
+					document.getElementById("first").innerHTML = "Thanksgiving Break!"
+
+				</script>
+				<center><p id = "second"</p></center>
+				<script>
+					
+					document.getElementById("second").innerHTML = "Novi Open House on November 29th"
+				</script>
+
+
+
 
 
 
@@ -106,32 +160,6 @@
 		<script>
 
 	 	   	var studentInfo = {
-
-	 	   		jason : {
-
-	 	   			schedule : ["9:00am - 9:55am: English", 
-	 	   						"10:01am - 10:56: Statistics", 
-	 	   						"poo"],
-
-	 	   			grades : {
-	 	   				english: 10,
-	 	   				math: 0,
-
-	 	   			},
-
-	 	   			todolist : ["first thing", 
-	 	   						"second thing",
-	 	   						"third thing",
-	 	   						"fourth thing",
-	 	   						"fifth thing",
-	 	   						"sixth"],
-
-	 	   			notes: {
-	 	   				//class1: link_to_class1_notes
-	 	   				//
-	 	   			}
-
-	 	   		},
 
 	 	   		// student 2
 	 	   		Student2 : {
@@ -232,26 +260,20 @@
 
 	 	   	};
 
-
-	 	   	function getStudentSchedule(name) {
+	 	   	function getStudentSchedule(name){
 	 	   		return studentInfo[name].schedule;
 	 	   	}//getStudentSchedule()
 
-
-	 	   	function parseSchedule(data) {
-	 	   		// create empty unordered_list to hold courses
+	 	   	function parseSchedule(data){
 	 	   		var ul = document.createElement('ul');
 
-	 	   		// get student schedule in the order it's listed and
-	 	   		// add each element to the unordered list	
-	 	   		for (var i = 0; i < data.length; i++) {
+	 	   		for (var i = data.length - 1; i >= 0; i--) {
 	 	   			var course = data[i];
 	 	   			var li = document.createElement('li');
 	 	   			li.innerHTML = course;
 	 	   			ul.appendChild(li);
 	 	   		}
 
-	 	   		// add entire schedule to the 'daily-schedule' tile
 	 	   		document.getElementById('daily-schedule').appendChild(ul);
 
 	 	   	}//parseSchedule()
@@ -284,7 +306,7 @@
 
 	 	   	function getStudentGrades(name) {
 	 	   		return studentInfo[name].grades;
-	 	   	}//getStudentToDo()
+	 	   	}//getStudentGrades()
 
 
 	 	   	function parseGrades(data) {
@@ -350,9 +372,7 @@
 
 	 	   		// get the student's COURSE NOTES, parse it, and put it into tile
 	 	   		parseNotes(getStudentNotes(name));
-
 	 	   	}//loadAllTiles()
-	 	   	
 
  	    </script>
 	</body>
