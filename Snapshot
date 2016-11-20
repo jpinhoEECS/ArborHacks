@@ -3,6 +3,10 @@
 		<title>My School Snapshot</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="main.css">
+		<script
+			  src="http://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>
 	</head>
 
 	<body background="Novi_watermark.jpg">
@@ -14,11 +18,13 @@
   			<option value="Novi">Novi High School</option>
 		  	<option value="Pioneer">Pioneer High School</option>
 		  	<option value="Huron">Huron High School</option> </select></center>
-		<center> Your Name: <input type="textarea" name="first_name" id="first_name"> </center>
+		<!-- These are the text box fields for name, username, and password -->
+		<center> Your Name: <input type="textarea" name="first_name" id="first_name" class="user_first_name"> </center>
+		<center> Username : <input type="textarea" name="username" id="username"> </center>
+		<center> Password : <input type="password" name="password" id="password"> </center>
+		
+		<center><button onclick="loadAllTiles();">Login</button></center>
 		<br>
-		<center><button onclick="username_and_password_prompt();">Proceed to Login</button></center>
-
-		<!-- formaction="URL" (can we make this go to the Novi website?) -->
 
 		<!-- ROW 1 -->
 		<center class="container-fluid"><div class="row center-block">
@@ -96,47 +102,57 @@
 		</p>
 
 		<script>
-	 	   	function username_and_password_prompt() {
-	 	   		var first = document.getElementById("first_name").value;
-	 	   		var username = prompt("Username:", "");
-	 	   		var password = prompt("Password:", "");
-	 	   		document.getElementById("below_main_title").innerHTML = "Welcome " + first + "!";
-	 	   	}
 
 	 	   	var studentInfo = {
 
 	 	   		jason : {
 
-	 	   			schedule : ["eat","drink","poo"],
+	 	   			schedule : ["eat", 
+	 	   						"drink", 
+	 	   						"poo"],
 
 	 	   			grades : {
 	 	   				english: 10,
-	 	   				math: 0
+	 	   				math: 0,
 
-	 	   			}
+	 	   			},
+
+	 	   			todolist : ["first thing", 
+	 	   						"second thing",
+	 	   						"third thing",
+	 	   						"fourth thing",
+	 	   						"fifth thing",
+	 	   						"sixth"],
 
 	 	   			notes: {
-	 	   				class1: link_to_class1_notes
+	 	   				//class1: link_to_class1_notes
 	 	   				//
 	 	   			}
 
-	 	   		}
+	 	   		},
 
 	 	   		// student 2
+	 	   		Cindy : {
+
+	 	   		},
 
 	 	   		// student 3
+	 	   		Student3 : {
 
+	 	   		},
+
+	 	   		// student 4	
+	 	   		Student4 : {
+
+	 	   		}
+	 	   		
 	 	   	};
 
+
 	 	   	function getStudentSchedule(name) {
-	 	   		// make sure name is valid
-	 	   		if (studentInfo[name]) {
-	 	   			return studentInfo[name].schedule;
-	 	   		}
-	 	   		else {
-	 	   			return 0;
-	 	   		}
+	 	   		return studentInfo[name].schedule;
 	 	   	}//getStudentSchedule()
+
 
 	 	   	function parseSchedule(data) {
 	 	   		// create empty unordered_list to hold courses
@@ -156,17 +172,99 @@
 
 	 	   	}//parseSchedule()
 
+
+	 	   	function getStudentToDo(name) {
+	 	   		return studentInfo[name].todolist;
+	 	   	}//getStudentToDo()
+
+
+	 	   	function parseToDo(data) {
+	 	   		// create empty unordered_list to hold to do list items
+	 	   		var ul = document.createElement('ul');
+
+	 	   		// get to do list in the order it's listed and
+	 	   		// add each element to the unordered list	
+	 	   		for (var i = 0; i < data.length; i++) {
+	 	   			var course = data[i];
+	 	   			var li = document.createElement('li');
+	 	   			li.innerHTML = course;
+	 	   			ul.appendChild(li);
+	 	   		}
+
+	 	   		// add entire schedule to the 'to-do-list' tile
+	 	   		document.getElementById('to-do-list').appendChild(ul);
+
+	 	   	}//parseToDo()
+
+
+	 	   	function getStudentGrades(name) {
+	 	   		return studentInfo[name].grades;
+	 	   	}//getStudentToDo()
+
+
+	 	   	function parseGrades(data) {
+	 	   		// create empty unordered_list to hold grades
+	 	   		var ul = document.createElement('ul');
+
+	 	   		// get current grades in the order it's listed and
+	 	   		// add each element to the unordered list	
+	 	   		for (var i = 0; i < data.length; i++) {
+	 	   			var course = data[i];
+	 	   			var li = document.createElement('li');
+	 	   			li.innerHTML = course;
+	 	   			ul.appendChild(li);
+	 	   		}
+
+	 	   		// add entire schedule to the 'current-grades' tile
+	 	   		document.getElementById('current-grades').appendChild(ul);
+
+	 	   	}//parseGrades()
+
+
+	 	   	function getStudentNotes(name) {
+	 	   		return studentInfo[name].notes;
+	 	   	}//getStudentNotes()
+
+
+	 	   	function parseNotes(data) {
+	 	   		// create empty unordered_list to hold grades
+	 	   		var ul = document.createElement('ul');
+
+	 	   		// get current grades in the order it's listed and
+	 	   		// add each element to the unordered list	
+	 	   		for (var i = 0; i < data.length; i++) {
+	 	   			var course = data[i];
+	 	   			var li = document.createElement('li');
+	 	   			li.innerHTML = course;
+	 	   			ul.appendChild(li);
+	 	   		}
+
+	 	   		// add entire schedule to the 'course-notes' tile
+	 	   		document.getElementById('course-notes').appendChild(ul);
+
+	 	   	}//parseNotes()
+
+
 	 	   	// load all of the tiles based on name entered 
 	 	   	// (this function should be called when user clicks "Login")
-	 	   	function loadAllTiles(name) {
+	 	   	function loadAllTiles() {
+	 	   		var input = $('.user_first_name');
+	 	   		var name = input.val();
+
+	 	   		// adds a custom welcome message below the main title
+	 	   		document.getElementById("below_main_title").innerHTML = "Welcome " + name + "!";
+
 	 	   		// get the student's SCHEDULE, parse it, and put it into tile
 	 	   		parseSchedule(getStudentSchedule(name));
 
 	 	   		// get the student's TO DO LIST, parse it, and put it into tile
+	 	   		parseToDo(getStudentToDo(name));
 
 	 	   		// get the student's CURRENT GRADES, parse it, and put it into tile
+	 	   		parseGrades(getStudentGrades(name));
 
 	 	   		// get the student's COURSE NOTES, parse it, and put it into tile
+	 	   		parseNotes(getStudentNotes(name));
 
 	 	   	}//loadAllTiles()
 	 	   	
