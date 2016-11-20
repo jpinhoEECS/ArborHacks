@@ -1,9 +1,9 @@
 <html>
 	<head>
-		<title>My School Snapshot</title>
+		<title><p id="main_title">My School Snapshot</p></title>
 	</head>
 
-	<body>
+	<body background="Novi_watermark.jpg">
 		<p>
 		<center><h1>My School Snapshot</h1></center>
 		<center>  <select name="schools">
@@ -32,11 +32,14 @@
 		<br>
 		<br>
 		<center><h2>To Do List</h2></center>
+
 		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
-		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
-		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
-		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
-		<center><input type="checkbox"><input type="textarea" name="todo1"></center>
+		<center><input type="checkbox"><input type="textarea" name="todo2"></center>
+		<center><input type="checkbox"><input type="textarea" name="todo3"></center>
+		<center><input type="checkbox"><input type="textarea" name="todo4"></center>
+		<center><input type="checkbox"><input type="textarea" name="todo5"></center>
+		<center><strike>not yet available!</strike></center>
+		<!-- FIXME: add if statements to strike through text of completed tasks -->
 
 
 		<!-- END TILE 2 -->
@@ -76,6 +79,24 @@
 
 
 		<!-- END TILE 6 -->
+		<script>
+ 	   		// alert("Hello, world!");
+ 	   		// document.getElementById("first").innerHTML = "input into first paragraph"
+ 	   		var x = prompt("Please enter a number", "0"); 
+ 	   		// need variables for line above 0 is default value in example
+ 	   		document.getElementById("x").innerHTML = x;
+
+	 	   function add(p1, p2) {
+	 	   		return p1 + p2;
+	 	   }
+
+	 	   document.getElementById("first").innerHTML = add(5, 6);
+
+	 	   function put_name_in_title() {
+	 	   		var name = prompt("Please enter your name", "");
+	 	   		document.getElementById("main_title").innerHTML = name + "'s School Snapshot";
+	 	   }
+ 	    </script>
 
 		<!-- !--<img src="blah.jpg"> -->
 		</p>
