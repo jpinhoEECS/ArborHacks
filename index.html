@@ -272,30 +272,6 @@
 	 	   	}//parseGrades()
 
 
-	 	   	function getStudentNotes(name) {
-	 	   		return studentInfo[name].notes;
-	 	   	}//getStudentNotes()
-
-
-	 	   	function parseNotes(data) {
-	 	   		// create empty unordered_list to hold grades
-	 	   		var ul = document.createElement('ul');
-
-	 	   		// get current grades in the order it's listed and
-	 	   		// add each element to the unordered list	
-	 	   		for (var i = 0; i < data.length; i++) {
-	 	   			var course = data[i];
-	 	   			var li = document.createElement('li');
-	 	   			li.innerHTML = course;
-	 	   			ul.appendChild(li);
-	 	   		}
-
-	 	   		// add entire schedule to the 'course-notes' tile
-	 	   		document.getElementById('course-notes').appendChild(ul);
-
-	 	   	}//parseNotes()
-
-
 	 	   	// load all of the tiles based on name entered 
 	 	   	// (this function should be called when user clicks "Login")
 	 	   	function loadAllTiles() {
@@ -315,7 +291,8 @@
 	 	   		parseGrades(getStudentGrades(name));
 
 	 	   		// get the student's COURSE NOTES, parse it, and put it into tile
-	 	   		parseNotes(getStudentNotes(name));
+	 	   		// REMOVED: Too complicated to have separate links
+	 	   		//parseNotes(getStudentNotes(name));
 
 	 	   		// remove username and password text boxes
 	 	   		removeTextBoxes();
